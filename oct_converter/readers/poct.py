@@ -30,7 +30,7 @@ class POCT(object):
     def _read_filespec(self) -> None:
         scan_info = []
         file_info = {}
-        with open(self.filespec, "r", encoding="iso-8859-1") as f:
+        with open(self.filespec, "r", encoding="latin-1") as f:
             lines = f.readlines()
             for i, line in enumerate(lines):
                 if "Window Height" in line:
